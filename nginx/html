@@ -1,0 +1,19 @@
+server {
+	listen 80;
+
+	root /var/www/jacobnollette_com-drop;
+	index index.html index.htm;
+
+	server_name drop.jacobnollette.com;
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+	location = /xmlrpc.php {
+            deny all;
+            access_log off;
+            error_log off;
+            log_not_found off;
+    } 
+
+}
