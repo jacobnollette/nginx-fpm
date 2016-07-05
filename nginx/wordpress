@@ -1,4 +1,7 @@
 server {
+	
+	# Wordpress configuration
+	
 	listen 80;
 	listen [::]:80;
 
