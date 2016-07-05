@@ -34,16 +34,3 @@ server {
 
 }
 
-
-server {
-	listen 80;
-	listen [::]:80;
-	
-	server_name serendipity-accessories.com;
-	location / {
-		rewrite ^.* http://www.serendipity-accessories.com;
-	}
-
-}
-
-
